@@ -1,0 +1,84 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'HarmonyOs Sans Medium';
+  src: local('Medium'), local('Medium'),
+    url('/fonts/Medium.woff2') format('truetype');
+}
+
+@font-face {
+  font-family: 'HarmonyOs Sans Regular';
+  src: local('Regular'), local('Regular'),
+    url('/fonts/Regular.woff2') format('truetype');
+}
+@font-face {
+  font-family: 'HarmonyOs Sans Bold';
+  src: local('Bold'), local('Bold'),
+    url('/fonts/Bold.woff2') format('truetype');
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
+}
+
+:root {
+  font-family: 'HarmonyOs Sans Medium';
+  line-height: 1.5;
+  font-weight: 500;
+
+  color-scheme: light dark;
+  color: #000;
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  font-family: 'HarmonyOs Sans Bold';
+}
+h3{
+  font-family: 'HarmonyOs Sans Regular';
+}
+
+input{
+  background: inherit;
+}
+input:focus{
+  border:none;
+  outline: none;
+  font-size: 24px;
+  font-family: 'HarmonyOs Sans Bold';
+}
+input::placeholder{
+  font-size: 24px;
+  color:#BDBDBD;
+}
+input{
+  font-size:24px;
+  width: 100%;
+  font-family: 'HarmonyOs Sans Bold';
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
